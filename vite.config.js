@@ -6,6 +6,7 @@ const isCodeSandbox = 'SANDBOX_URL' in process.env || 'CODESANDBOX_HOST' in proc
 
 export default defineConfig({
   plugins: [react()],
+  base: "/vite-shadcn/",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
